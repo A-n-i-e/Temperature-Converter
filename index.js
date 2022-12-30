@@ -6,16 +6,16 @@ degree.oninput =()=>{
     if (unit.value == 'celsius'){
         let output = ( parseFloat(degree.value) * 9/5) + 32;
         if (!isNaN(output)){
-            result.value =  parseFloat(output.toFixed(2)) + 'F';
+            result.value =  parseFloat(output.toFixed(2)) + '°F';
         }
         else{
             result.value = ' ';
         }
     }
     else{
-        let output = ( parseFloat(degree.value) - 32) * 9/5;
+        let output = ( parseFloat(degree.value) - 32) * 5/9;
         if (!isNaN(output)){
-            result.value =  parseFloat(output.toFixed(2)) + 'C';
+            result.value =  parseFloat(output.toFixed(2)) + '°C';
         }
         else{
             result.value = ' ';
